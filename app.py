@@ -84,7 +84,6 @@ def inject_globals():
     return dict(
         nav_items=nav_items_data,
         app_title=app.config['APPLICATION_NAME'],
-        current_year=datetime.now().year,
         get_setting=get_setting,
         format_datetime=format_datetime
     )

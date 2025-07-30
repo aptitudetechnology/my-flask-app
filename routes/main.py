@@ -13,8 +13,10 @@ main_bp = Blueprint('main', __name__)
 @main_bp.route('/')
 def dashboard():
     """Main dashboard"""
+    from datetime import datetime
     log_user_action('dashboard_visit', request.remote_addr)
-    return render_template('dashboard.html', title='Dashboard')
+    now = datetime.now()
+    return render_template('dashboard.html', title='Dashboard', now=now)
 
 
 
