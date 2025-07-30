@@ -11,6 +11,7 @@ import logging
 from pathlib import Path
 from flask import Flask, render_template, request, redirect, url_for, flash, jsonify
 from datetime import datetime
+import json
 
 # Import blueprints from the routes package
 from routes import register_blueprints
